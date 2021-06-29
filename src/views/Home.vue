@@ -5,7 +5,7 @@
   .container(class="flex md:space-x-4 flex-col items-center md:justify-around md:flex-row").mx-auto
     label.block
       | Amount staked
-      input(type="number" v-model="data.amount" ).block.mt-1
+      input(type="number" ,v-model="data.amount", step="0.01" ).block.mt-1
     label.block
       | APR 
       span.text-xs (see on your service provider)
@@ -13,7 +13,7 @@
     label.block
       | Duration 
       span.text-xs (days) 
-      input(type="number"  v-model="data.duration").block.mt-1
+      input(type="number",  v-model="data.duration", step="1").block.mt-1
   .container.mx-auto(class="w-1/2").text-center.mt-8
     p.mt-5.text-xl.font-bold Total after {{data.duration}} day(s)
     span.block {{apyCalc().toFixed(5)}} EGLD
