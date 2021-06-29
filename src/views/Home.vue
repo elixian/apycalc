@@ -2,7 +2,7 @@
 .container.m-3
   h1.text-center Apy calculator 
     span.text-center only for compound 
-  .container(class="flex md:space-x-4 flex-col items-center md:justify-around md:flex-row").mx-auto
+  .container(class="flex  flex-col items-center md:space-x-4 md:justify-around md:flex-row").mx-auto
     label.block
       | Amount staked
       input(type="number" ,v-model="data.amount", step="0.01" ).block.mt-1
