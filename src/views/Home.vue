@@ -3,18 +3,18 @@
   h1.text-center Apy calculator 
     span.text-center only for compound 
   .container(class="flex  flex-col items-center md:space-x-4 md:justify-around md:flex-row").mx-auto
-    label.block
+    label.block.mt-4
       | Amount staked
       input(type="number" ,v-model="data.amount", step="0.01" ).block.mt-1
-    label.block
+    label.blockmd.mt-4
       | APR 
       span.text-xs (see on your service provider)
       input(type="number",  v-model="data.apr", step="0.01").block.mt-1
-    label.block
+    label.block.mt-4
       | Duration 
       span.text-xs (days) 
       input(type="number",  v-model="data.duration", step="1").block.mt-1
-  .container.mx-auto(class="w-1/2").text-center.mt-8
+  .container.mx-auto(class="md:w-1/2").text-center.mt-8
     p.mt-5.text-xl.font-bold Total after {{data.duration}} day(s)
     span.block {{apyCalc().toFixed(5)}} EGLD
     p.mt-5.text-xl.font-bold ROI
