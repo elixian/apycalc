@@ -1,4 +1,5 @@
-# d-system
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c1adc48e-2556-44d4-821b-8958936b4be0/deploy-status)](https://app.netlify.com/sites/romantic-hodgkin-bfa52b/deploys)
+# APY Calculator (compound APR)
 
 ## Project setup
 ```
