@@ -1,5 +1,4 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+<template lang="pug">
+div(class="md:container mx-auto")
+  h1.text-red-600 This about page with PUG
 </template>
